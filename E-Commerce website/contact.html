@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us -RedStore | Ecommerce website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="product.html">Products</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <h2 class="title">RedStore | Ecommerce website Design</h2>
+    <div class="row">
+        <div class="col-2">
+            <a href="product details.html"><img src="images/image1.png" width="100%" style="display: block; margin: 0 auto 0 0;"></a>
+        </div>
+        <div class="col-2">
+            <form>
+                <input type="text" placeholder="Your Name" required><br><br>
+                <input type="email" placeholder="Your Email" required><br><br>
+                <textarea placeholder="Your Message" rows="6" required></textarea><br><br>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+        <div class="col-2" style="display: block; margin: 0 auto 0 0;">
+            
+            <h3>Email Us </h3>
+            <p>bhoomikabp178@gmail.com</p>
+            <h3>Call Us</h3>
+            <p>+91 9019778239</p>
+        </div>
+    </div>
+</div>
+
+<!-- Include footer here if needed -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>

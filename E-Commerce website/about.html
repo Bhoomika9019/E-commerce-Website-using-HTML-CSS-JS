@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - RedStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="product.html">Products</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+
+<div class="small-container">
+    <h2 class="title">RedStore | Ecommerce website </h2>
+    <div class="row">
+        <div class="col-2">
+            <img src="images/image1.png" alt="About RedStore">
+        </div>
+        <div class="col-2">
+           <p> At RedStore is a modern and visually appealing E-commerce website designed to offer users a seamless online shopping experience. Built using HTML, CSS, and JavaScript, it features a responsive layout that adapts to various screen sizes, making it accessible on desktops, tablets, and mobile devices. </p><br> <br>
+
+                The homepage showcases a clean and dynamic interface with the following key 
+                <br>
+                <br>
+                <ul>
+                
+                <h4><li>Navigation Bar: </li></h4>Includes links to essential pages such as Home, Products, About, Contact, and Account, with a clickable shopping cart icon for quick access.<br>
+                
+                <h4><li>Hero Section:</li></h4> A compelling introductory banner that promotes featured products and encourages users to explore more.<br>
+                
+                <h4><li>Product Categories:</li></h4> Visually distinct image sections that guide users to specific product categories.<br>
+                
+                <h4><li>Featured & Latest Products:</li></h4> Displays a selection of products with images, ratings, titles, and prices. Each product is linked to a detailed product page.<br>
+                
+                <h4><li>Exclusive Offer Section:</li></h4> Highlights a promotional item (e.g., Smart Band 4) with a call-to-action button.<br>
+                
+                <h4><li>Testimonials:</li></h4> Customer reviews are presented with star ratings and user images, adding credibility and trust.<br>
+                
+                <h4><li>Brand Logos:</li></h4> Displays logos of partnered or featured brands like Oppo, Coca-Cola, and PayPal to enhance brand recognition.<br>
+                
+                <h4><li>Footer Section:</li></h4> Contains app download links, company mission, useful links, and social media follow options.<br>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Include footer here if needed -->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+        } else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>
